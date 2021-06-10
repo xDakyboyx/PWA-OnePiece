@@ -74,7 +74,7 @@
             <input type="submit" value="Pošalji" id="send">
         </form>
 
-        <script src="ValidacijaUnos.js"></script>
+        <script src="/ValidacijaUnos.js"></script>
         
         </div>
     </div>

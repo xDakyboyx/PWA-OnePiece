@@ -66,9 +66,17 @@
                 <span class="LoginPoruka"></span>    
                 <button type="submit" class="Login--Button" name="Login">Login</button>
                 <button type="reset" class="Reset">Cancel</button>
+                
+                </form>
+                
+                <form action="" method="post">
+                <button type="submit" name="SignOut" class="Reset">Sign Out</button>
                 </form>
                 <?php 
-
+                    if (isset($_POST['SignOut'])) {
+                        $_SESSION['Username'] = "";
+                        $_SESSION['Razina'] = 0;
+                    }
                     if (isset($_POST['Login'])) {
                     
                         $Username = $_POST['Username'];

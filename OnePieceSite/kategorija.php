@@ -84,7 +84,7 @@
             $result = mysqli_query($dbc, $query);
 
             if ($result) {
-                for ($i=0; $i < (intdiv($Count['BrojClanaka'], 3) + $Broj); $i++) {
+                for ($i=0; $i < (intdiv($Count['BrojClanaka'], 3) + $Broj); $i++) { # broj potreban da se moze izvoditi dovoljno redova za sve article
                 echo '<section>'; 
 
                 if ($i == (intdiv($Count['BrojClanaka'], 3) + $Broj)-1) {

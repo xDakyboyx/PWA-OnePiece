@@ -95,7 +95,7 @@
 
 
                 #header("Location: /unos.php");       #Samo ako je localhost/
-
+                #header("Location: /OnePieceSite/unos.php");
                 mysqli_close($dbc);
                 
             
@@ -104,7 +104,7 @@
                     <h2 class="h2--clanak"> <?php echo $Naslov ?> </h2>
                     <p>Objavljeno: <?php echo $Datum ?> </p>
                     <p> <?php echo $KratkiSadrzaj ?> </p>
-                    <img src="img/<?php echo $Slika ?>" alt="<?php echo $Naslov ?>">
+                    <img src="img/<?php echo $Slika ?>" alt="<?php echo $Naslov ?>" style="width: 200px;">
                     <p> <?php echo $TekstVijesti ?> </p>
         
         </div>

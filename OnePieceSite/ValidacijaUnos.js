@@ -8,7 +8,7 @@ document.getElementById("send").onclick = function(event) {
     if (Naslov.length < 5 || Naslov.length > 30) {
         slanje_forme = false;
         poljeNaslov.style.border = "1px dashed red";
-        document.getElementById("PorukaNaslov").innerHTML = "Naslov vjesti mora imati između 5 i 30 znakova!<br>";
+        document.getElementById("PorukaNaslov").innerHTML = "Naslov mora imati između 5 i 30 znakova!<br>";
     } else {
         poljeNaslov.style.border = "1px solid green";
         document.getElementById("PorukaNaslov").innerHTML = "";
