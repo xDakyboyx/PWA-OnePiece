@@ -94,12 +94,18 @@
                 } 
 
 
-                header("Location: /unos.php");
+                #header("Location: /unos.php");       #Samo ako je localhost/
 
                 mysqli_close($dbc);
                 
             
             ?>
+
+                    <h2 class="h2--clanak"> <?php echo $Naslov ?> </h2>
+                    <p>Objavljeno: <?php echo $Datum ?> </p>
+                    <p> <?php echo $KratkiSadrzaj ?> </p>
+                    <img src="img/<?php echo $Slika ?>" alt="<?php echo $Naslov ?>">
+                    <p> <?php echo $TekstVijesti ?> </p>
         
         </div>
     </div>
