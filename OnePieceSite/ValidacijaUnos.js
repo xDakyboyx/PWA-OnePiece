@@ -50,10 +50,6 @@ document.getElementById("send").onclick = function(event) {
         document.getElementById("PorukaKategorija").innerHTML = "";
     }
 
-    if (slanje_forme != true) {
-        event.preventDefault();
-    }
-
     // Slika
     var poljeSlika = document.getElementById("Slika");
     var Slika = poljeSlika.value;
@@ -66,6 +62,8 @@ document.getElementById("send").onclick = function(event) {
         document.getElementById("PorukaSlika").innerHTML = "";
     }
 
-    
+    if (slanje_forme != true) {
+        event.preventDefault();
+    }
 
 };
